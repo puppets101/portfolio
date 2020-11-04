@@ -109,18 +109,52 @@ img {
 
 .about .img-profile {
   float: left;
-  width: 50%;
+  width: 40%;
   background: url('../assets/profile.jpg') no-repeat;
   min-height: 100%;
 }
 
 .about .info-profile {
   float: right;
-  width: 50%;
+  width: 60%;
   height: 100%;
   text-align: center;
   padding: 3rem 2rem;
   overflow: hidden;
+}
+
+.about .info-profile h2 {
+  font-size: 2rem;
+}
+
+.about .info-profile p {
+  font-size: 1.2rem;
+}
+
+/* WORK */
+.work-title {
+  text-align: center;
+  margin: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.work {
+  height: 25rem;
+}
+
+.work a {
+  color: blue;
+  
+}
+
+.items {
+  text-align: center;
+  margin: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.item {
+  margin: 0 4rem;
 }
 
 
