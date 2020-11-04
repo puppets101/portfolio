@@ -8,6 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #fff;
   line-height: 1.6;
+  /* background-color: var(--primary-color); */
 }
 
 ul {
@@ -93,6 +94,33 @@ img {
 /* CURSOR JS */
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
+}
+
+/* ABOUT */
+.about-title {
+  text-align: center;
+  margin: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.about {
+  height: 25rem;
+}
+
+.about .img-profile {
+  float: left;
+  width: 50%;
+  background: url('../assets/profile.jpg') no-repeat;
+  min-height: 100%;
+}
+
+.about .info-profile {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 3rem 2rem;
+  overflow: hidden;
 }
 
 
