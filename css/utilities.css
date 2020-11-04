@@ -3,6 +3,28 @@
   --secondary-color: #2c88d3;
 }
 
+/* REUSABLE CLASSES */
+.flex {
+  display: flex;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
 /* TEXT */
 .text-primary {
   color: #2c88d3;
