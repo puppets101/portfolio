@@ -102,37 +102,44 @@ img {
 }
 
 .about-title {
+  height: 5rem;
   text-align: center;
   margin: 1.25rem;
   font-size: 1.25rem;
 }
 
 .about {
-  height: 25rem;
+  height: 25%;
 }
 
-.about .img-profile {
+.about .img-profile-left {
   float: left;
-  width: 40%;
-  background: url('../assets/profile.jpg') no-repeat;
+  width: 50%;
+  background: url('../assets/showcase.jpg') no-repeat;
+  min-height: 100%;
+}
+.about .img-profile-right {
+  float: right;
+  width: 50%;
+  background: url('../assets/showcase.jpg') no-repeat;
   min-height: 100%;
 }
 
-.about .info-profile {
+.about .info-profile-left {
   float: right;
-  width: 60%;
+  width: 50%;
   height: 100%;
   text-align: center;
   padding: 3rem 2rem;
   overflow: hidden;
 }
-
-.about .info-profile h2 {
-  font-size: 2rem;
-}
-
-.about .info-profile p {
-  font-size: 1.2rem;
+.about .info-profile-right {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 3rem 2rem;
+  overflow: hidden;
 }
 
 /* WORK */
@@ -168,9 +175,13 @@ img {
 
 /* FOOTER */
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: var(--primary-color);
   color: #fff;
   height: 5rem;
+  opacity: .8;
 }
 
 .footer .content {
