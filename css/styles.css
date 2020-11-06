@@ -97,6 +97,10 @@ img {
 }
 
 /* ABOUT */
+.container-about {
+  height: 100vh;
+}
+
 .about-title {
   text-align: center;
   margin: 1.25rem;
@@ -132,6 +136,10 @@ img {
 }
 
 /* WORK */
+.container-work {
+  height: 100vh;
+}
+
 .work-title {
   text-align: center;
   margin: 1.25rem;
