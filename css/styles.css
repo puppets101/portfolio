@@ -103,7 +103,6 @@ img {
 
 .about-title {
   height: 5rem;
-  text-align: center;
   margin: 1.25rem;
   font-size: 1.25rem;
 }
@@ -130,7 +129,7 @@ img {
   width: 50%;
   height: 100%;
   text-align: center;
-  padding: 3rem 2rem;
+  /* padding: 3rem 2rem; */
   overflow: hidden;
 }
 .about .info-profile-right {
@@ -138,7 +137,7 @@ img {
   width: 50%;
   height: 100%;
   text-align: center;
-  padding: 3rem 2rem;
+ /*  padding: 3rem 2rem; */
   overflow: hidden;
 }
 
@@ -148,28 +147,20 @@ img {
 }
 
 .work-title {
-  text-align: center;
+  height: 5rem;
   margin: 1.25rem;
   font-size: 1.25rem;
 }
 
 .work {
-  height: 25rem;
+  padding: 2rem;
 }
 
-.work a {
-  color: blue;
-  
-}
-
-.items {
-  text-align: center;
-  margin: 1.25rem;
-  font-size: 1.25rem;
-}
-
-.item {
-  margin: 0 4rem;
+.projects img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 100rem;
+  object-fit: cover;
 }
 
 

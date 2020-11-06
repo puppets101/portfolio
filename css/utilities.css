@@ -25,6 +25,11 @@
   justify-content: space-between;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
 /* TEXT */
 .text-primary {
   color: #408f58;
@@ -32,6 +37,10 @@
 
 .text-secondary {
   color: #2c88d3;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* BUTTON */
@@ -54,4 +63,9 @@
 .btn-secondary {
   background: #2c88d3;
   color: #fff;
+}
+
+/* PADDING */
+.padded {
+  padding: 2rem;
 }
