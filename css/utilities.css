@@ -25,9 +25,14 @@
   justify-content: space-between;
 }
 
-.grid {
+.grid-work {
   display: grid;
   grid-template-columns: repeat(4, auto);
+}
+
+.grid-about {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }
 
 /* TEXT */

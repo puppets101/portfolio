@@ -107,38 +107,9 @@ img {
   font-size: 1.25rem;
 }
 
-.about {
-  height: 25%;
-}
-
-.about .img-profile-left {
-  float: left;
-  width: 50%;
-  background: url('../assets/showcase.jpg') no-repeat;
-  min-height: 100%;
-}
-.about .img-profile-right {
-  float: right;
-  width: 50%;
-  background: url('../assets/showcase.jpg') no-repeat;
-  min-height: 100%;
-}
-
-.about .info-profile-left {
-  float: right;
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  /* padding: 3rem 2rem; */
-  overflow: hidden;
-}
-.about .info-profile-right {
-  float: right;
-  width: 50%;
-  height: 100%;
-  text-align: center;
- /*  padding: 3rem 2rem; */
-  overflow: hidden;
+.about img {
+  height: 12rem;
+  object-fit: cover;
 }
 
 /* WORK */
