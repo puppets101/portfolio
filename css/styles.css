@@ -52,6 +52,15 @@ img {
   margin: 0 .3rem;
 }
 
+.navbar-transparent {
+  background: transparent;
+}
+
+.navbar-colored {
+  background: var(--primary-color);
+  opacity: .8;
+}
+
 .navbar a:hover {
   border-bottom: var(--secondary-color) 2px solid;
 }
@@ -112,8 +121,17 @@ img {
 }
 
 .about img {
-  height: 12rem;
-  object-fit: cover;
+  height: 20%;
+}
+
+.about .img-profile {
+  background: url(../assets/profile-me.jpg) no-repeat center center/cover;
+}
+.about .img-come-from {
+  background: url(../assets/fireplace.jpg) no-repeat center center/cover;
+}
+.about .img-hobby {
+  background: url(../assets/fotboll.jpg) no-repeat center center/cover;
 }
 
 .about .info-profile {
@@ -229,10 +247,10 @@ img {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #fff;
   height: 5rem;
-  opacity: .8;
+  opacity: .7;
 }
 
 .footer .content {
