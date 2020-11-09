@@ -4,6 +4,7 @@ function main() {
   addEventListeners();
   smoothScroll();
   navbarColored();
+  footerColored();
 }
 
 function navbarColored() {
@@ -17,6 +18,19 @@ function navbarColored() {
       navbar.classList.remove('navbar-colored');
     }
   });
+}
+
+function footerColored() {
+  window.addEventListener('scroll', function(e) {
+    const footer = document.getElementById('footer-content');
+    if(document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+      footer.classList.add('footer-colored');
+      footer.classList.remove('footer-transparent');
+    } else {
+      footer.classList.add('footer-transparent');
+      footer.classList.remove('footer-colored');
+    }
+  })
 }
 
 function addEventListeners() {
