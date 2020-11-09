@@ -120,9 +120,9 @@ img {
   padding-top: 1rem;
 }
 
-.about img {
-  height: 20%;
-}
+/* .about img {
+  height: 12rem;
+} */
 
 .about .img-profile {
   background: url(../assets/profile-me.jpg) no-repeat center center/cover;
@@ -147,6 +147,12 @@ img {
   height: 5rem;
   margin: 1.25rem;
   font-size: 1.25rem;
+}
+
+.work-title p {
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .work {
@@ -250,7 +256,15 @@ img {
   background-color: var(--secondary-color);
   color: #fff;
   height: 5rem;
-  opacity: .7;
+}
+
+.footer-transparent {
+  background: transparent;
+  opacity: .8;
+}
+
+.footer-colored {
+  background: var(--primary-color);
 }
 
 .footer .content {
