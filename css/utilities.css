@@ -1,6 +1,8 @@
 :root {
   --primary-color: #408f58;
   --secondary-color: #2c88d3;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
 }
 
 /* REUSABLE CLASSES */
@@ -37,11 +39,11 @@
 
 /* TEXT */
 .text-primary {
-  color: #408f58;
+  color: var(--secondary-color);
 }
 
 .text-secondary {
-  color: #2c88d3;
+  color: var(--secondary-color);
 }
 
 .text-center {
@@ -62,11 +64,11 @@
 }
 
 .btn-primary {
-  background: #408f58;
+  background: var(--primary-color);
   color: #fff;
 }
 .btn-secondary {
-  background: #2c88d3;
+  background: var(--secondary-color);
   color: #fff;
 }
 
