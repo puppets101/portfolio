@@ -3,6 +3,20 @@ window.addEventListener('load', main);
 function main() {
   addEventListeners();
   smoothScroll();
+  navbarColored();
+}
+
+function navbarColored() {
+  window.addEventListener('scroll', function(e) {
+    const navbar = document.getElementById('home');
+    if(document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+      navbar.classList.add('navbar-colored');
+      navbar.classList.remove('navbar-transparent');
+    } else {
+      navbar.classList.add('navbar-transparent');
+      navbar.classList.remove('navbar-colored');
+    }
+  });
 }
 
 function addEventListeners() {
