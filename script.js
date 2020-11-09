@@ -1,8 +1,17 @@
-/* window.addEventListener('load', main);
+window.addEventListener('load', main);
 
 function main() {
   addEventListeners();
-} */
+  smoothScroll();
+}
+
+function addEventListeners() {
+
+}
+
+function smoothScroll() {
+  let scroll = new SmoothScroll('a[href*="#"]');
+}
 
 
 const TypeWriter = function(txtElement, words, wait = 3000) {
