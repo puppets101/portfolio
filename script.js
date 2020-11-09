@@ -6,14 +6,69 @@ function main() {
 }
 
 function addEventListeners() {
+  const form = document.getElementById('form');
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const subject = document.getElementById('subject');
+  const textarea = document.getElementById('textarea');
 
+  // Check email is valid (grabbed from stack overflow)
+  function isValidEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // name
+    if (name.value === '') {
+      showError(name, 'Please fill in your name');
+    } else {
+      showSuccess(name);
+    }
+    // email
+    if (email.value === '') {
+      showError(email, 'Please fill in your email');
+    } else if(!isValidEmail(email.value)) {
+      showError(email, 'Please fill in a valid email');
+    } else {
+      showSuccess(email);
+    }
+    // subject
+    if (subject.value === '') {
+      showError(subject, 'Please enter a subject');
+    } else {
+      showSuccess(subject);
+    }
+    // textarea
+    if (textarea.value === '') {
+      showError(textarea, 'Please enter a message');
+    } else {
+      showSuccess(textarea);
+    }
+  });
 }
 
+// Show input error message
+function showError(input, message) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control error';
+  const small = formControl.querySelector('small');
+  small.innerText = message;
+}
+
+// Show input success outline 
+function showSuccess(input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success';
+}
+
+// SCROLL
 function smoothScroll() {
-  let scroll = new SmoothScroll('a[href*="#"]');
+  const scroll = new SmoothScroll('a[href*="#"]');
 }
 
-
+// TYPEWRITER
 const TypeWriter = function(txtElement, words, wait = 3000) {
   this.txtElement = txtElement;
   this.words = words;
