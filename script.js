@@ -79,20 +79,20 @@ function formValidation() {
       showSuccess(textarea);
     }
   });
-}
 
-// Show input error message
-function showError(input, message) {
-  const formControl = input.parentElement;
-  formControl.className = 'form-control error';
-  const small = formControl.querySelector('small');
-  small.innerText = message;
-}
+  // Show input error message
+  function showError(input, message) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control error';
+    const small = formControl.querySelector('small');
+    small.innerText = message;
+  }
 
-// Show input success outline 
-function showSuccess(input) {
-  const formControl = input.parentElement;
-  formControl.className = 'form-control success';
+  // Show input success outline 
+  function showSuccess(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+  }
 }
 
 // SCROLL
