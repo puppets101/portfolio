@@ -1,6 +1,6 @@
 :root {
   --primary-color: #408f58;
-  --secondary-color: #078f94;
+  --secondary-color: #076094;
   --light-color: #f4f4f4;
   --dark-color: #333;
   --success-color: #2ecc71;
@@ -36,6 +36,10 @@
 .basis {
   flex-basis: 100%;
   flex: 1;
+}
+
+.margin-top {
+  margin-top: 5.5rem;
 }
 
 /* COLORS */
