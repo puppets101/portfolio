@@ -6,9 +6,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #fff;
+  background: #f4f4f4;
   line-height: 1.6;
-  /* background-color: var(--primary-color); */
 }
 
 ul {
@@ -106,36 +105,35 @@ img {
 }
 
 /* ABOUT */
-.container-about {
-  height: 100vh;
-}
 
 .about-title {
-  height: 5rem;
-  margin: 1.25rem;
+  margin-top: 5.5rem;
   font-size: 1.25rem;
 }
 
 .about {
-  padding-top: 1rem;
-}
-
-/* .about img {
-  height: 12rem;
-} */
-
-.about .img-profile {
-  background: url(../assets/profile-me.jpg) no-repeat center center/cover;
-}
-.about .img-come-from {
-  background: url(../assets/fireplace.jpg) no-repeat center center/cover;
-}
-.about .img-hobby {
-  background: url(../assets/fotboll.jpg) no-repeat center center/cover;
+  width: 75%;
 }
 
 .about .info-profile {
-  margin: 1rem;
+  margin: 2.5rem;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+  min-width: 30rem;
+}
+
+
+
+.about .img img {
+  height: 20rem;
+  width: 20rem;
+  min-height: 12rem;
+  min-width: 12rem;
+  object-fit: cover;
+/*   margin: 1rem; */
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+ /*  border-radius: 50%; */
 }
 
 /* WORK */

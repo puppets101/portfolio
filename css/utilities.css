@@ -32,14 +32,14 @@
   grid-template-columns: repeat(4, auto);
 }
 
-.grid-about {
+/* .grid-about {
   display: grid;
   grid-template-columns: repeat(2, auto);
-}
+} */
 
 /* TEXT */
 .text-primary {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .text-secondary {
