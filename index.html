@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htmlo lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
   <header class="container-home">
     <div id ="home" class="navbar">
       <h1 class="logo">
-        <span class="text-primary"><i class="fas fa-male"></i> Oscar</span> Andersson
+        <a href="#home"><span class="text-primary"><i class="fas fa-male"></i> Oscar</span> Andersson</a>
       </h1>
       <nav>
         <ul>
@@ -37,7 +37,7 @@
 
   <!-- MAIN -->
   <main>
-    <!-- ABOUT -->
+    <!-- MAIN: ABOUT -->
     <section id="about" class="flex horizontal">
       <div class="flex horizontal wrap full-width">
         <div class="flex vertical basis">
@@ -45,166 +45,91 @@
             <img class="profile-img" src="./assets/profile-pic.jpg" alt="">
           </div>
         </div>
-        <div class="flex vertical basis">
-          <div class="about-me full-height bg-light">
+        <div class="margin-top flex vertical basis">
+          <div class="padded full-height bg-light">
             <i class="fas fa-user fa-2x"></i>
             <h3><span class="text-primary">About</span> Me</h3>
             <p>My name is Oscar Andersson and I'm a positive, ambitious and loyal person with an interest for development, both personal and on the web. A true team-player with several seasons as team-captain in the local football where I gained experience in both leadership and organisation. Professionally experienced as my former role as a Sports Betting Consultant gave me a lot of responsibility, both working individually and collaboration with business partners and colleagues.</p>
           </div>
-          <div class="about-me full-height bg-light">
+          <div class="padded full-height bg-light">
             <i class="fas fa-house-user fa-2x"></i>
             <h3>Where I <span class="text-primary">Come From</span></h3>
             <p>I've spent the substantial part of my professional career in the Sports Betting business working for a company that consults its costumers to pick the right bet of the day. My role at the company regularly increased with more and more responsibility for editing the daily picks, keep other journalists to their deadline and for the last two and a half years I've also written my picks. This job gave me a lot of experience working with the statistic, research, marketing and writing.</p>
           </div>
-          <div class="about-me full-height bg-light">
+          <div class="padded full-height bg-light">
             <i class="fas fa-running fa-2x"></i>
             <h3><span class="text-primary">What</span> I Like Doing</h3>
-            <p>Brought up by a family that consumed and practised all kinds of sports it came as no shock that I too have a love for sports in general. Football was the one that stood out over the rest among tennis, ice hockey, floorball, golf among others. From the youth team, I've been my local club faithful for nine seasons. Besides active sports and training, I love travelling. South-East Asia has a special place in my heart, so do Australia and New Zeeland. When kicking it back home, I like spending time with my partner playing chess, poker or binge a Netflix series.</p>
+            <p>Brought up by a family that consumed and practised all kinds of sports it came as no shock that I too have a love for sports in general. Football was the one that stood out over the rest among tennis, ice hockey, floorball, golf among others. After the youth team, I've been my local club faithful for nine seasons. Besides sports and training, I love travelling. South-East Asia has a special place in my heart, so do Australia and New Zeeland. When kicking it back home, I like spending time with my partner playing chess, poker or binge a Netflix series.</p>
           </div>
         </div>
       </div>
     </section>
-  </main>
-  <!-- <div id="about" class="container-about flex centered vertical">
-    <div class="about">
-      <div class="about-title text-center">
-        <h2 class="text-primary">ABOUT ME</h2>
-        <p class="small-text">Let me tell you a little about me</p>
-      </div>
-      <div class="profile flex">
-        <div class="img">
-          <img src="./assets/profile-me.jpg" alt="">
+    <!-- END MAIN: ABOUT -->
+    <!-- MAIN: WORK -->
+    <section id="work" class="work flex horizontal">
+      <div class="flex horizontal wrap full-width">
+        <div class="flex vertical basis">
+          <div class="margin-top padded full-height bg-light">
+            <h2><span class="text-primary">WORK &</span> PROJECTS</h2>
+          <p>At Medieinstitutets Front End Developer program, I study web techniques that are required to produce advanced web pages and, I will gain knowledge in web design, user access abilities/UX, JavaScript and much more. The program includes the fundamentals of responsiveness design as mobile web applications.</p>
+          <h4>Here you find links to some of my projects:</h4>
+          <ul>
+            <li><a href="#">Football Game</a></li>
+            <li><a href="#">Countdown Clock</a></li>
+            <li><a href="#">Type Speed Game</a></li>
+          </ul>
+          </div>
         </div>
-        <div class="info-profile">
-          <h2><span class="text-primary">Who </span>am I</h2>
-          <p>My name is Oscar Andersson and I'm a positive, ambitious and loyal person with an interest for development, both personal and on the web. A true team-player with several seasons as team-captain in the local football where I gained experience in both leadership and organisation. Professionally experienced as my former role as a Sports Betting Consultant gave me a lot of responsibility, both working individually and collaboration with business partners and colleagues.</p>
-        </div>
-      </div>
-      <div class="profile flex">
-        <div class="info-profile">
-          <h2><span class="text-primary">Where do </span>I come from</h2>
-          <p>I've spent the substantial part of my professional career in the Sports Betting business working for a company that consults its costumers to pick the right bet of the day. My role at the company regularly increased with more and more responsibility for editing the daily picks, keep other journalists to their deadline and for the last two and a half years I've also written my picks. This job gave me a lot of experience working with the statistic, research, marketing and writing.</p>
-        </div>
-        <div class="img">
-          <img src="./assets/fireplace.jpg" alt="">
+        <div class="flex vertical basis">
+          <div class="full-height">
+            <img class="profile-img" src="./assets/coding.jpg" alt="">
+          </div>
         </div>
       </div>
-      <div class="profile flex">
-        <div class="img">
-          <img src="./assets/fotboll.jpg" alt="">
+    </section>
+    <!-- END MAIN: WORK -->
+    <!-- MAIN: CONTACT  -->
+    <div id="contact" class="container-contact">
+      <form id="form" class="form">
+        <h2 class="text-secondary">Send me a message</h2>
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input type="text" id ="name" placeholder="John Doe">
+          <br>
+          <small>Error message</small>
         </div>
-        <div class="info-profile">
-          <h2><span class="text-primary">What I </span>like doing</h2>
-          <p>Brought up by a family that consumed and practised all kinds of sports it came as no shock that I too have a love for sports in general. Football was the one that stood out over the rest among tennis, ice hockey, floorball, golf among others. From the youth team, I've been my local club faithful for nine seasons. Besides active sports and training, I love travelling. South-East Asia has a special place in my heart, so do Australia and New Zeeland. When kicking it back home, I like spending time with my partner playing chess, poker or binge a Netflix series.</p>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id ="email" placeholder="johndoe@gmail.com">
+          <br>
+          <small>Error message</small>
         </div>
-      </div>
+        <div class="form-control">
+          <label for="subject">Subject</label>
+          <input type="text" id ="subject" placeholder="Developer wanted">
+          <br>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="textarea">Message</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="6" placeholder="Enter message here..."></textarea>
+          <br>
+          <small>Error message</small>
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
     </div>
-  </div> -->
-
-  <!-- MAIN: WORK -->
-  <div id="work" class="container-work flex centered vertical">
-    <h2 class="work-title text-primary">WORK & PROJECTS</h2>
-    <div class="work">
-      <div class="text-center">
-        <p class="small-text">At Medieinstitutets Front End Developer program, I study web techniques that are required to produce advanced web pages and, I will gain knowledge in web design, user access abilities/UX, JavaScript and much more. The program includes the fundamentals of responsiveness design as mobile web applications.</p>
-      </div>
-      <div class="flex centered horizontal text-center">
-        <div class="work-specials">
-          <i class="text-primary fas fa-laptop-code fa-2x"></i>
-          <h3>Programming</h3>
-          <p>Responsible for web development in CSS, HTML and JavaScript</p>
-        </div>
-        <div class="work-specials">
-          <i class="text-primary fas fa-desktop fa-2x"></i>
-          <h3>UI/UX</h3>
-          <p>Work with targeting adapted web development regarding to usability, availability and UX</p>
-        </div>
-        <div class="work-specials">
-          <i class="text-primary fas fa-object-group fa-2x"></i>
-          <h3>Visiual Design</h3>
-          <p>Develop, customize and test web solutions for different browsers and platforms</p>
-        </div>
-        <div class="work-specials">
-          <i class="text-primary fas fa-thumbs-up fa-2x"></i>
-          <h3>Interaction</h3>
-          <p>Web development with a focus on different APIs and frameworks</p>
-        </div>
-      </div>
-      <div class="projects">
-        <div class="text-center">
-          <h3>My Projects</h3>
-          <p>Here is a few sample of my own projects so far:</p>
-        </div>
-        <div class="project flex centered horizontal text-center">
-          <div class="flex vertical">
-            <div class="img">
-              <img src="./assets/football.jpg" alt="">
-            </div>
-            <div class="info-project">
-              <h4><span class="text-primary">Football </span>Game</h4>
-            </div>
-          </div>
-          <div class="flex vertical">
-            <div class="img">
-              <img src="./assets/countdown.jpg" alt="">
-            </div>
-            <div class="info-project">
-              <h4><span class="text-primary">Countdown </span>Clock</h4>
-            </div>
-          </div>
-          <div class="flex vertical">
-            <div class="img">
-              <img src="./assets/keyboard.jpg" alt="">
-            </div>
-            <div class="info-project">
-              <h4><span class="text-primary">Typing </span>Game</h4>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- MAIN: CONTACT  -->
-  <div id="contact" class="container-contact">
-    <form id="form" class="form">
-      <h2 class="text-secondary">Send me a message</h2>
-      <div class="form-control">
-        <label for="name">Name</label>
-        <input type="text" id ="name" placeholder="John Doe">
-        <br>
-        <small>Error message</small>
-      </div>
-      <div class="form-control">
-        <label for="email">Email</label>
-        <input type="text" id ="email" placeholder="johndoe@gmail.com">
-        <br>
-        <small>Error message</small>
-      </div>
-      <div class="form-control">
-        <label for="subject">Subject</label>
-        <input type="text" id ="subject" placeholder="Developer wanted">
-        <br>
-        <small>Error message</small>
-      </div>
-      <div class="form-control">
-        <label for="textarea">Message</label>
-        <textarea name="textarea" id="textarea" cols="30" rows="6" placeholder="Enter message here..."></textarea>
-        <br>
-        <small>Error message</small>
-      </div>
-      <button class="btn btn-primary" type="submit">Send</button>
-    </form>
-  </div>
-  <!-- FOOTER -->
-  <footer class="footer">
+    <!-- FOOTER -->
+    <footer class="footer">
       <div id="footer-content" class="content">
-        <i class="fas fa-phone"><span>(+46)73 54 44 508</span></i>
-        <i class="fas fa-envelope-open-text"><span>oscand92@gmail.com</span></i>
-        <i class="fab fa-github"><span>username</span></i>
-        <i class="fab fa-linkedin-in"><span>username</span></i>
+        <a href="tel: +46735444508"><i class="fas fa-phone fa-2x"></i> (+46)73 54 44 508</a>
+        <a href="mailto: oscand92@gmail.com"><i class="fas fa-at fa-2x"></i> oscand92@gmail.com</a>
+        <a href="https://github.com/puppets101" target="_blank"><i class="fab fa-github fa-2x"></i> puppets101</a>
+        <a href="#"><i class="fab fa-linkedin-in fa-2x"></i> username</a>
       </div>
-  </footer>
-  <!-- END FOOTER -->
+    </footer>
+    <!-- END FOOTER -->
+  </main>
+  <!-- END MAIN -->
 </body>
-</htmlo
+</html>
