@@ -109,14 +109,7 @@ img {
   border-right: 0.2rem solid #777;
 }
 
-/* ABOUT */
-.icons i {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 1rem;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
+/* ABOUT */ 
 
 .profile-img {
   height: 100%;
@@ -125,37 +118,21 @@ img {
 
 /* WORK */
 
+.education {
+  display: flex;
+  justify-content: center;
+}
+
+.education p {
+  max-width: 16rem;
+  margin: 0 2rem;
+}
+
 .work a {
   color: var(--primary-color);
 }
 .work a:hover {
   color: var(--secondary-color);
-}
-
-
-
-.work-specials {
-  width: 16rem;
-  height: 16rem;
-  margin: 1rem 2rem;
-  padding: 1rem;
-  background: #fff;
-  opacity: .9;
-  border-radius: 10%;
-  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
-}
-
-.project .img img {
-
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.projects img {
-  height: 12rem;
-  width: 12rem;
-  border-radius: 100rem;
-  object-fit: cover;
 }
 
 /* CONTACT */
@@ -272,6 +249,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
 }
 
 .footer .content a:hover {
