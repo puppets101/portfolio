@@ -72,6 +72,7 @@ img {
 .navbar ul {
   display: flex;
 }
+/* END NAVBAR */
 
 /* HEADER */
 .container-home {
@@ -109,6 +110,8 @@ img {
   border-right: 0.2rem solid #777;
 }
 
+/* END HEADER */
+
 /* ABOUT */ 
 .header-space-div-about {
   height: 5rem;
@@ -117,6 +120,7 @@ img {
   height: 100%;
   object-fit: cover;
 }
+/* END ABOUT */
 
 /* WORK */
 .header-space-div-work {
@@ -134,6 +138,7 @@ img {
 .work .work-content ul li a {
   margin: 0.3rem .625rem;
 }
+/* END WORK */
 
 /* CONTACT */
 .container-contact {
@@ -212,7 +217,7 @@ img {
 .form-control.error small {
   visibility: visible;
 }
-
+/* END CONTACT */
 
 
 
@@ -255,3 +260,4 @@ img {
 .footer .content a:hover {
   color: var(--primary-color);
 }
+/* END FOOTER */
