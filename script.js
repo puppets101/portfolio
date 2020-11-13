@@ -1,9 +1,11 @@
+/** LOAD MAIN ON LOAD */
 window.addEventListener('load', main);
 
+/** START ON PROGRAM */
 function main() {
   addEventListeners();
 }
-
+/** CONTAINS FUNCTION CALLS */
 function addEventListeners() {
   formValidation();
   smoothScroll();
@@ -11,6 +13,7 @@ function addEventListeners() {
   footerColored();
 }
 
+/** Colors navbar when scroll */
 function navbarColored() {
   window.addEventListener('scroll', function(e) {
     const navbar = document.getElementById('home');
@@ -24,6 +27,7 @@ function navbarColored() {
   });
 }
 
+/** Colors footer when scroll */
 function footerColored() {
   window.addEventListener('scroll', function(e) {
     const footer = document.getElementById('footer-content');
@@ -44,21 +48,22 @@ function formValidation() {
   const subject = document.getElementById('subject');
   const textarea = document.getElementById('textarea');
 
-  // Check email is valid (grabbed from stack overflow)
+  /**
+   * @param {email} email check if typed email is valid
+   */
   function isValidEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
 
+  /** Check if input boxes are filled or not */
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    // name
     if (name.value === '') {
       showError(name, 'Please fill in your name');
     } else {
       showSuccess(name);
     }
-    // email
     if (email.value === '') {
       showError(email, 'Please fill in your email');
     } else if(!isValidEmail(email.value)) {
@@ -66,13 +71,11 @@ function formValidation() {
     } else {
       showSuccess(email);
     }
-    // subject
     if (subject.value === '') {
       showError(subject, 'Please enter a subject');
     } else {
       showSuccess(subject);
     }
-    // textarea
     if (textarea.value === '') {
       showError(textarea, 'Please enter a message');
     } else {
@@ -80,7 +83,11 @@ function formValidation() {
     }
   });
 
-  // Show input error message
+  /**
+   * 
+   * @param {input} input user input
+   * @param {message} message show error message in small tag if invalid
+   */
   function showError(input, message) {
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
@@ -89,18 +96,29 @@ function formValidation() {
   }
 
   // Show input success outline 
+  /**
+   * 
+   * @param {input} input user input 
+   */
   function showSuccess(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
   }
 }
 
-// SCROLL
+
+/** Smooth scroll from cdn.jsdelivr.net */
 function smoothScroll() {
   const scroll = new SmoothScroll('a[href*="#"]');
 }
 
 // TYPEWRITER
+/**
+ * 
+ * @param {*} txtElement 
+ * @param {*} words 
+ * @param {*} wait 
+ */
 const TypeWriter = function(txtElement, words, wait = 3000) {
   this.txtElement = txtElement;
   this.words = words;
