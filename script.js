@@ -112,12 +112,12 @@ function smoothScroll() {
   const scroll = new SmoothScroll('a[href*="#"]');
 }
 
-// TYPEWRITER
+
 /**
- * 
- * @param {*} txtElement 
- * @param {*} words 
- * @param {*} wait 
+ * TYPEWRITER
+ * @param {HTMLElement} txtElement span element that holds the words typed
+ * @param {String} words array that holds the different words
+ * @param {Number} wait number in milliseconds
  */
 const TypeWriter = function(txtElement, words, wait = 3000) {
   this.txtElement = txtElement;
@@ -129,42 +129,35 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
   this.isDeleting = false;
 }
 
-// Type method 
+/** TypeWriter Method */
 TypeWriter.prototype.type = function() {
-  // Current index of word
   const current = this.wordIndex % this.words.length;
-  // Get full text of current word
   const fullText = this.words[current];
 
-  // Check if deleting
   if(this.isDeleting) {
-    // Remove character 
+    /** Remove character */
     this.txt = fullText.substring(0, this.txt.length - 1);
     } else {
-    // Add cheracter 
+    /** Add character */
     this.txt = fullText.substring(0, this.txt.length + 1);
   }
 
-  // Insert txt into element 
+  /** Insert txt into element  */
   this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-  // Initial type speed
+  /**
+   * @type {typeSpeed} milliseconds before start write new word
+   */
   let typeSpeed = 300;
   if(this.isDeleting) {
     typeSpeed /= 2;
   }
 
-  // If word is complete
   if(!this.isDeleting && this.txt === fullText) {
-    // Make pause at end
     typeSpeed = this.wait;
-    // Set delete to true
     this.isDeleting = true;
   } else if(this.isDeleting && this.txt === '') {
     this.isDeleting = false;
-    // Move to next word 
     this.wordIndex++;
-    // Pause before start typing next word
     typeSpeed = 500;
   }
 
