@@ -1,4 +1,4 @@
-/* MOBIE */
+/* TABLETS */
 @media(max-width: 768px) {
   /* HOME */
   .navbar {
@@ -10,7 +10,7 @@
     margin: .25rem;
   }
 
-  .navbar ul li {
+  .navbar .logo {
     display: none;
   }
 
@@ -19,6 +19,10 @@
   }
 
   /* ABOUT */
+  .header-space-div-about {
+    display: none;
+  }
+
   .about .about-content {
     flex-direction: column;
   }
@@ -33,7 +37,7 @@
   }
   .about .about-content p {
     text-align: center;
-    padding: 0 2rem;
+    padding: 0;
   }
 
   /* WORK */
@@ -49,6 +53,10 @@
 }
 
 /* CONTACT */
+.form-control {
+  padding-bottom: .25rem;
+  margin-bottom: .25rem;
+}
 
 /* FOOTER */
 .footer .content a,

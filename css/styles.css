@@ -110,34 +110,15 @@ img {
 }
 
 /* ABOUT */ 
-
-
 .profile-img {
   height: 100%;
   object-fit: cover;
 }
 
 /* WORK */
-.work .work-content {
-  padding: 2rem;
+.header-space-div-work {
+  height: 5rem;
 }
-
-.work .work-content ul {
-  padding: 1rem 0 0 0;
-}
-
-/* .education .flex-items{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.education p {
-  max-width: 16rem;
-  margin: 0 2rem;
-} */
 
 .work a {
   color: var(--primary-color);
