@@ -110,6 +110,9 @@ img {
 }
 
 /* ABOUT */ 
+.header-space-div-about {
+  height: 5rem;
+} 
 .profile-img {
   height: 100%;
   object-fit: cover;
@@ -117,14 +120,19 @@ img {
 
 /* WORK */
 .header-space-div-work {
-  height: 5rem;
+  height: 5rem; 
 }
 
 .work a {
   color: var(--primary-color);
 }
+
 .work a:hover {
   color: var(--secondary-color);
+}
+
+.work .work-content ul li a {
+  margin: 0.3rem .625rem;
 }
 
 /* CONTACT */
@@ -172,7 +180,7 @@ img {
   display: block;
   width: 100%;
   padding: .5rem;
-  font-size: 14px;
+  font-size: .9rem;
 }
 
 .form-control input:focus {
