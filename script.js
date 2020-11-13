@@ -1,7 +1,6 @@
-/** LOAD MAIN ON LOAD */
 window.addEventListener('load', main);
 
-/** START ON PROGRAM */
+/** START THE PROGRAM */
 function main() {
   addEventListeners();
 }
@@ -13,7 +12,7 @@ function addEventListeners() {
   footerColored();
 }
 
-/** Colors navbar when scroll */
+/** Colors navbar on scroll */
 function navbarColored() {
   window.addEventListener('scroll', function(e) {
     const navbar = document.getElementById('home');
@@ -27,7 +26,7 @@ function navbarColored() {
   });
 }
 
-/** Colors footer when scroll */
+/** Colors footer on scroll */
 function footerColored() {
   window.addEventListener('scroll', function(e) {
     const footer = document.getElementById('footer-content');
@@ -41,6 +40,7 @@ function footerColored() {
   })
 }
 
+/** Validate the user input on form */
 function formValidation() {
   const form = document.getElementById('form');
   const name = document.getElementById('name');
@@ -97,7 +97,6 @@ function formValidation() {
 
   // Show input success outline 
   /**
-   * 
    * @param {input} input user input 
    */
   function showSuccess(input) {
@@ -145,7 +144,7 @@ TypeWriter.prototype.type = function() {
   /** Insert txt into element  */
   this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
   /**
-   * @type {typeSpeed} milliseconds before start write new word
+   * @type {Number} 
    */
   let typeSpeed = 300;
   if(this.isDeleting) {
@@ -172,6 +171,6 @@ function init() {
   const txtElement = document.getElementById('txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
   const wait = txtElement.getAttribute('data-wait');
-  // Init TypeWriter
+
   new TypeWriter(txtElement, words, wait);
 }
