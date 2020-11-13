@@ -113,9 +113,6 @@ img {
 /* END HEADER */
 
 /* ABOUT */ 
-.header-space-div-about {
-  height: 5rem;
-} 
 .profile-img {
   height: 100%;
   object-fit: cover;
