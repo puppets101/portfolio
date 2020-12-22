@@ -1,138 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="https://kit.fontawesome.com/fa62c3a7c2.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/utilities.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/mediaqueries.css">
-  <script src="./script.js" defer></script>
-  <title>Oscar Andersson | Portfolio</title>
-</head>
-<body>
-  <!-- HEADER -->
-  <header class="container-home">
-    <div id ="home" class="navbar">
-      <h1 class="logo">
-        <a href="#about"><span class="text-primary"><i class="fas fa-male"></i> Oscar</span> Andersson</a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#work">WORK</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="content">
-      <h1>I Am Oscar the <span class="txt-type" id="txt-type" data-wait="2000" data-words='["Web Developer", "Statistician", "Editor"]'></span></h1>
-      <p>Studying Front End Development @Medieinstitutet</p>
-      <a href="#work" class="btn btn-primary">View my work</a>
-    </div>
-  </header>
-  <!-- END HEADER -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fa62c3a7c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+    <script src="./script.js" defer></script>
+    <title>Oscar Andersson | Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="container-home">
+      <div id="home" class="navbar">
+        <h1 class="logo">
+          <a href="#about"
+            ><span class="text-primary"><i class="fas fa-male"></i> Oscar</span>
+            Andersson</a
+          >
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>
+          I Am Oscar the
+          <span
+            class="txt-type"
+            id="txt-type"
+            data-wait="2000"
+            data-words='["Web Developer", "Statistician", "Editor"]'
+          ></span>
+        </h1>
+        <p>Studying Front End Development @Medieinstitutet</p>
+        <a href="#work" class="btn btn-primary">View my work</a>
+      </div>
+    </header>
+    <!-- END HEADER -->
 
-  <!-- MAIN -->
-  <main>
-    <!-- MAIN: ABOUT -->
-    <section id="about" class="about">
-      <div class="about-content flex horizontal wrap full-width bg-light">
-        <div class="flex vertical basis">
-          <div class="full-height">
-            <img class="profile-img" src="./assets/profile-pic.jpg" alt="">
+    <!-- MAIN -->
+    <main>
+      <!-- MAIN: ABOUT -->
+      <section id="about" class="about">
+        <div class="about-content flex horizontal wrap full-width bg-light">
+          <div class="flex vertical basis">
+            <div class="full-height">
+              <img class="profile-img" src="./assets/profile-pic.jpg" alt="" />
+            </div>
+          </div>
+          <div class="margin-top flex vertical basis">
+            <div class="padded full-height">
+              <i class="fas fa-user fa-2x"></i>
+              <h3><span class="text-primary">About</span> Me</h3>
+              <p>
+                My name is Oscar Andersson. I'm a positive, ambitious and loyal
+                person who's interested in development, both personal and on the
+                web. I'm a true team-player with several seasons in the local
+                football where I gained experience in both leadership and
+                organisation. Professionally I've gained a lot of different
+                experience, as my former role as a Sports Betting Consultant. In
+                which I had a lot of responsibility as the publisher of the
+                company's texts amongst others.
+              </p>
+            </div>
+            <div class="padded full-height">
+              <i class="fas fa-house-user fa-2x"></i>
+              <h3>Where I <span class="text-primary">Come From</span></h3>
+              <p>
+                I've spent the substantial part of my professional career in the
+                Sports Betting business working for a company that consults its
+                costumers to pick the right bet of the day. My role at the
+                company regularly increased with more and more responsibility
+                for editing the daily picks, keep other journalists to their
+                deadline and for the last two and a half years I've also written
+                my picks. This job gave me a lot of experience working with the
+                statistic, research, marketing and writing.
+              </p>
+            </div>
+            <div class="padded full-height">
+              <i class="fas fa-running fa-2x"></i>
+              <h3><span class="text-primary">What</span> I Like Doing</h3>
+              <p>
+                Raised by a family that consumed and practised all kinds of
+                sports, it comes as no shock that I too have a love for sports
+                in general. Football was the one that stood out over the rest
+                among tennis, ice hockey, floorball, golf among others. After
+                the youth team, I've been my local club faithful for nine
+                seasons. Besides sports and training, I love travelling.
+                South-East Asia has a special place in my heart, so do Australia
+                and New Zeeland. When kicking it back home, I like spending time
+                with my partner playing chess, poker or binge Netflix series.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="margin-top flex vertical basis">
-          <div class="padded full-height">
-            <i class="fas fa-user fa-2x"></i>
-            <h3><span class="text-primary">About</span> Me</h3>
-            <p>My name is Oscar Andersson. I'm a positive, ambitious and loyal person who's interested in development, both personal and on the web. I'm a true team-player with several seasons as in the local football where I gained experience in both leadership and organisation. Professionally I've gained a lot of different experience, as my former role as a Sports Betting Consultant. In which I had a lot of responsibility as the publisher of the company's texts amongst others.</p>
+      </section>
+      <!-- END MAIN: ABOUT -->
+      <!-- MAIN: WORK -->
+      <section id="work" class="work">
+        <div class="header-space-div-work"></div>
+        <div class="work-content flex">
+          <div class="flex vertical basis bg-light">
+            <div class="flex vertical centered padded full-height">
+              <h2><span class="text-primary">WORK &</span> PROJECTS</h2>
+              <p>
+                At Medieinstitutets Front End Developer program, I study web
+                techniques that are required to produce advanced web pages and,
+                I will learn the fundamentals of HTML, CSS, JavaScript and
+                TypeScript along with web design, user access abilities/UX,
+                responsiveness design and mobile web applications.<br /><br />I'm
+                just in the beginng of my Web Developer journey and here are
+                some of my projects I've made this far.
+              </p>
+              <h4>The projects are uploaded to GitHub Pages</h4>
+              <ul class="flex">
+                <li>
+                  <a
+                    href="https://puppets101.github.io/football-game/"
+                    target="_blank"
+                    >Football Game</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://puppets101.github.io/countdown/"
+                    target="_blank"
+                  >
+                    Countdown Clock</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://puppets101.github.io/typing-game/"
+                    target="_blank"
+                    >Type Speed Game</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://hberglund.github.io/todo-calendar/"
+                    target="_blank"
+                    >Calendar</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="padded full-height">
-            <i class="fas fa-house-user fa-2x"></i>
-            <h3>Where I <span class="text-primary">Come From</span></h3>
-            <p>I've spent the substantial part of my professional career in the Sports Betting business working for a company that consults its costumers to pick the right bet of the day. My role at the company regularly increased with more and more responsibility for editing the daily picks, keep other journalists to their deadline and for the last two and a half years I've also written my picks. This job gave me a lot of experience working with the statistic, research, marketing and writing.</p>
-          </div>
-          <div class="padded full-height">
-            <i class="fas fa-running fa-2x"></i>
-            <h3><span class="text-primary">What</span> I Like Doing</h3>
-            <p>Raised by a family that consumed and practised all kinds of sports, it comes as no shock that I too have a love for sports in general. Football was the one that stood out over the rest among tennis, ice hockey, floorball, golf among others. After the youth team, I've been my local club faithful for nine seasons. Besides sports and training, I love travelling. South-East Asia has a special place in my heart, so do Australia and New Zeeland. When kicking it back home, I like spending time with my partner playing chess, poker or binge a Netflix series.</p>
+          <div class="flex vertical basis">
+            <div class="full-height">
+              <img class="profile-img" src="./assets/coding.jpg" alt="" />
+            </div>
           </div>
         </div>
+      </section>
+      <!-- END MAIN: WORK -->
+      <!-- MAIN: CONTACT  -->
+      <div id="contact" class="container-contact">
+        <form id="form" class="form">
+          <h2 class="text-secondary">Send me a message</h2>
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe" />
+            <br />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="johndoe@gmail.com" />
+            <br />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Developer wanted" />
+            <br />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="textarea">Message</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="6"
+              placeholder="Enter message here..."
+            ></textarea>
+            <br />
+            <small>Error message</small>
+          </div>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
       </div>
-    </section>
-    <!-- END MAIN: ABOUT -->
-    <!-- MAIN: WORK -->
-    <section id="work" class="work">
-      <div class="header-space-div-work"></div>
-      <div class="work-content flex">
-        <div class="flex vertical basis bg-light">
-          <div class="flex vertical centered padded full-height">
-            <h2><span class="text-primary">WORK &</span> PROJECTS</h2>
-            <p>At Medieinstitutets Front End Developer program, I study web techniques that are required to produce advanced web pages and, I will learn the fundamentals of HTML, CSS, JavaScript and TypeScript along with web design, user access abilities/UX, responsiveness design and mobile web applications.<br><br>I'm just in the beginng of my Web Developer journey and here are some of my projects I've made this far.</p>
-            <h4>The projects are uploaded to GitHub Pages</h4>
-            <ul class="flex">
-              <li><a href="https://puppets101.github.io/football-game/" target="_blank">Football Game</a></li>
-              <li><a href="https://puppets101.github.io/countdown/"target="_blank"> Countdown Clock</a></li>
-              <li><a href="https://puppets101.github.io/typing-game/"target="_blank">Type Speed Game</a></li>
-            </ul>
-          </div>
+      <!-- END MAIN: CONTACT -->
+      <!-- MAIN: FOOTER -->
+      <footer class="footer">
+        <div id="footer-content" class="content">
+          <a href="tel: +46735444508"><i class="fas fa-phone fa-2x"></i></a>
+          <a href="mailto: oscand92@gmail.com"
+            ><i class="fas fa-at fa-2x"></i
+          ></a>
+          <a href="https://github.com/puppets101" target="_blank"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
         </div>
-        <div class="flex vertical basis">
-          <div class="full-height">
-            <img class="profile-img" src="./assets/coding.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END MAIN: WORK -->
-    <!-- MAIN: CONTACT  -->
-    <div id="contact" class="container-contact">
-      <form id="form" class="form">
-        <h2 class="text-secondary">Send me a message</h2>
-        <div class="form-control">
-          <label for="name">Name</label>
-          <input type="text" id ="name" placeholder="John Doe">
-          <br>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" id ="email" placeholder="johndoe@gmail.com">
-          <br>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="subject">Subject</label>
-          <input type="text" id ="subject" placeholder="Developer wanted">
-          <br>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="textarea">Message</label>
-          <textarea name="textarea" id="textarea" cols="30" rows="6" placeholder="Enter message here..."></textarea>
-          <br>
-          <small>Error message</small>
-        </div>
-        <button class="btn btn-primary" type="submit">Send</button>
-      </form>
-    </div>
-    <!-- END MAIN: CONTACT -->
-    <!-- MAIN: FOOTER -->
-    <footer class="footer">
-      <div id="footer-content" class="content">
-        <a href="tel: +46735444508"><i class="fas fa-phone fa-2x"></i></a>
-        <a href="mailto: oscand92@gmail.com"><i class="fas fa-at fa-2x"></i></a>
-        <a href="https://github.com/puppets101" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
-      </div>
-    </footer>
-    <!-- END MAIN: FOOTER -->
-  </main>
-  <!-- END MAIN -->
-</body>
+      </footer>
+      <!-- END MAIN: FOOTER -->
+    </main>
+    <!-- END MAIN -->
+  </body>
 </html>
