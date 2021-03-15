@@ -1,5 +1,5 @@
 /* TABLETS */
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   /* HOME */
   .navbar {
     height: 4rem;
@@ -7,8 +7,8 @@
     padding: 1.5rem;
   }
   .navbar a {
-    padding: .625rem;
-    margin: .25rem;
+    padding: 0.625rem;
+    margin: 0.25rem;
   }
 
   .navbar .logo {
@@ -41,6 +41,10 @@
     padding: 0;
   }
 
+  .about-divs {
+    flex-direction: column;
+  }
+
   /* WORK */
   .work img {
     display: none;
@@ -48,14 +52,17 @@
   .work .work-content {
     flex-direction: column;
   }
-  .work .work-content h2, h4, p, ul {
+  .work .work-content h2,
+  h4,
+  p,
+  ul {
     text-align: center;
   }
 
   /* CONTACT */
   .form-control {
-    padding-bottom: .25rem;
-    margin-bottom: .25rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
   }
 
   /* FOOTER */
@@ -64,37 +71,38 @@
   }
   .footer .content a,
   .footer .content i {
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
 }
 
 /* MOBILE SMALL */
-@media(max-width: 320px) {
+@media (max-width: 320px) {
   /* HOME */
   .navbar a {
     color: #fff;
-    padding: .3 .625rem;
+    padding: 0.3 0.625rem;
     margin: 0;
   }
 
   /* CONTACT */
   .form {
-    padding: .3rem 1rem;
+    padding: 0.3rem 1rem;
   }
 }
 
 /* Iphone 5/SE, 6, 7, 8 */
-@media(max-height: 719px) {
+@media (max-height: 719px) {
   .navbar {
-    display: none;
+    /* display: none; */
   }
   .form {
-    padding: 0.3 1rem;
+    padding: 0.1 1rem;
   }
+
   .container-contact h2 {
-    margin: .5rem;
+    margin: 0.5rem;
   }
   .footer {
-    display: none;
+    /* display: none; */
   }
 }
