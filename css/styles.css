@@ -114,8 +114,13 @@ img {
 /* END HEADER */
 
 /* ABOUT */
+
 .about {
   margin: 2rem;
+}
+
+.about-divs {
+  flex-direction: row;
 }
 
 i {

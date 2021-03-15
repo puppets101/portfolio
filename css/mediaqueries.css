@@ -41,6 +41,10 @@
     padding: 0;
   }
 
+  .about-divs {
+    flex-direction: column;
+  }
+
   /* WORK */
   .work img {
     display: none;
